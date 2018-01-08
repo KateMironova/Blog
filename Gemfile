@@ -41,6 +41,12 @@ group :development, :test do
   gem 'selenium-webdriver'
 end
 
+gem 'rspec-rails', :group => [:test, :development]
+group :test do
+  gem 'factory_bot_rails'
+  gem 'guard-rspec'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
